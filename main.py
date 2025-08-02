@@ -22,7 +22,7 @@ email_input = WebDriverWait(navegador,10).until(
     EC.presence_of_element_located((By.ID,"identifierId"))
 )
 
-email_input.send_keys("weslleybarbosa662@gmail.com")
+email_input.send_keys("seu email")
 
 bnt_avanca_email = WebDriverWait(navegador,10).until(
     EC.element_to_be_clickable((By.XPATH,"//span[text()='Avançar']"))
@@ -33,7 +33,7 @@ bnt_avanca_email.click()
 senha_input = WebDriverWait(navegador,15).until(
     EC.presence_of_element_located((By.NAME,"Passwd"))
 )
-senha_input.send_keys("educacao")
+senha_input.send_keys("sua senha do email")
 
 
 bnt_avançar_senha = WebDriverWait(navegador,10).until(
